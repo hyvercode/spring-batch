@@ -1,0 +1,15 @@
+spring:
+  batch:
+    job:
+      enabled: false
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/batching
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: root
+
+flyway:
+  enabled: true
+  baseline-on-migrate: true
+  out-of-order: true
